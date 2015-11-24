@@ -27,22 +27,21 @@ kInitWithHandler
         CGPoint center = CGPointMake(canvas.leading + spacing * i, (1 - scale) * CGRectGetHeight(rect));
         i ++;
         
-        UIBezierPath *nodePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(center.x - _node.nodeWidth / 2., center.y - _node.nodeWidth / 2., _node.nodeWidth, _node.nodeWidth)];
-        [_node.nodeColor setStroke];
+        CGRect rect =  CGRectMake(center.x - _node.nodeWidth / 2., center.y - _node.nodeWidth / 2., _node.nodeWidth, _node.nodeWidth);
+        UIBezierPath *nodePath = [UIBezierPath bezierPathWithOvalInRect:rect];
         [_node decoratorPath:nodePath];
+        [_node.nodeColor setStroke];
+        [nodePath stroke];
         
         if (!CGPointEqualToPoint(lastCenter, CGPointZero)) {
-            CGFloat dx = center.x - lastCenter.x;
-            CGFloat dy = center.y - lastCenter.y;
-            CGFloat r = _node.nodeWidth / 2.;
-            CGFloat distance = sqrt(pow(dx, 2) + pow(dy, 2));
+            LinePoints linePoints = [_node linePointsWithCenter:center lastCenter:lastCenter];
             
             UIBezierPath *linePath = [UIBezierPath bezierPath];
-            [linePath moveToPoint: CGPointMake(lastCenter.x + (dx * r) / distance,
-                                               lastCenter.y + (dy * r) / distance)];
-            [linePath addLineToPoint: CGPointMake(center.x - (dx * r) / distance,
-                                                  center.y - (dy * r) / distance)];
+            [linePath moveToPoint:linePoints.beginPoint];
+            [linePath addLineToPoint:linePoints.endPoint];
             [_line decoratorPath:linePath];
+            [_line.lineColor setStroke];
+            [linePath stroke];
         }
         
         lastCenter = center;

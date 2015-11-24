@@ -22,12 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    RBLineChart *chart = [[RBLineChart alloc] initWithFrame:CGRectMake(0, 40, CGRectGetWidth([UIScreen mainScreen].bounds), 94)];
+    RBLineChart *chart = [[RBLineChart alloc] initWithFrame:CGRectMake(0, 40, CGRectGetWidth([UIScreen mainScreen].bounds), 200)];
     
     RBLineChartDrawer *drawer = [[RBLineChartDrawer alloc] initWithHandler:^(RBLineChartDrawer *drawer) {
         drawer.datas = @[@10, @80, @90, @78, @98, @79, @87];
         drawer.line = [RBLine lineWithType:RBDefaultDashLine];
-        drawer.node = [RBNode nodeWithType:RBDefaultSolidNode];
+        drawer.node = [RBNode nodeWithType:TriangleNode];
     }];
     
     RBLineChartDrawer *drawer2 = [[RBLineChartDrawer alloc] initWithHandler:^(RBLineChartDrawer *drawer) {

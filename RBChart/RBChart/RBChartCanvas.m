@@ -7,6 +7,7 @@
 //
 
 #import "RBChartCanvas.h"
+#import "NSArray+RBAddition.h"
 
 @interface RBChartGridCanvas : RBChartCanvas
 @property (strong, nonatomic) UIBezierPath *middlePath;
@@ -14,16 +15,18 @@
 
 @implementation RBChartGridCanvas
 
-
-
 - (void)drawIfNeed:(CGRect)rect {
     [self.middlePath moveToPoint:CGPointMake(0, CGRectGetHeight(rect) / 2.)];
     [self.middlePath addLineToPoint:CGPointMake(CGRectGetWidth(rect), CGRectGetHeight(rect) / 2.)];
     [[UIColor whiteColor] setStroke];
     [self.middlePath stroke];
     
-    CGFloat spacing = (CGRectGetWidth(rect) - self.leading * 2) / (7 - 1);
-    for (NSUInteger i = 0; i < 7; i ++) {
+    NSUInteger dataCount = [[[self.drawers rb_map:^id(RBChartDrawer *drawer) {
+        return @(drawer.datas.count);
+    }] rb_max] unsignedIntegerValue];
+    
+    CGFloat spacing = (CGRectGetWidth(rect) - self.leading * 2) / (dataCount - 1);
+    for (NSUInteger i = 0; i < dataCount; i ++) {
         UIBezierPath *path = [UIBezierPath bezierPath];
         path.lineWidth = .5;
         CGFloat x = self.leading + spacing * i;

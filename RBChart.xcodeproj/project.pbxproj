@@ -14,6 +14,7 @@
 		B89F90EE1B56308200745914 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89F90ED1B56308200745914 /* Images.xcassets */; };
 		B89F90F11B56308200745914 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89F90EF1B56308200745914 /* LaunchScreen.xib */; };
 		B89F90FD1B56308200745914 /* RBChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B89F90FC1B56308200745914 /* RBChartTests.m */; };
+		C0B47F1A1C04852F00FD646E /* NSArray+RBAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B47F191C04852F00FD646E /* NSArray+RBAddition.m */; };
 		C0F79DD01C045422002217DF /* RBChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DCF1C045422002217DF /* RBChart.m */; };
 		C0F79DD31C045435002217DF /* RBChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DD21C045435002217DF /* RBChartData.m */; };
 		C0F79DD61C045443002217DF /* RBChartDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DD51C045443002217DF /* RBChartDrawer.m */; };
@@ -49,6 +50,8 @@
 		B89F90F61B56308200745914 /* RBChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89F90FB1B56308200745914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B89F90FC1B56308200745914 /* RBChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBChartTests.m; sourceTree = "<group>"; };
+		C0B47F181C04852F00FD646E /* NSArray+RBAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RBAddition.h"; sourceTree = "<group>"; };
+		C0B47F191C04852F00FD646E /* NSArray+RBAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RBAddition.m"; sourceTree = "<group>"; };
 		C0F79DCE1C045422002217DF /* RBChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChart.h; sourceTree = "<group>"; };
 		C0F79DCF1C045422002217DF /* RBChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChart.m; sourceTree = "<group>"; };
 		C0F79DD11C045435002217DF /* RBChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartData.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 		B89F90DF1B56308200745914 /* RBChart */ = {
 			isa = PBXGroup;
 			children = (
+				C0B47F181C04852F00FD646E /* NSArray+RBAddition.h */,
+				C0B47F191C04852F00FD646E /* NSArray+RBAddition.m */,
 				B89F91061B5630DD00745914 /* RBChart */,
 				B89F90E41B56308200745914 /* AppDelegate.h */,
 				B89F90E51B56308200745914 /* AppDelegate.m */,
@@ -289,6 +294,7 @@
 				C0F79DD91C04544E002217DF /* RBChartAxis.m in Sources */,
 				B89F90E61B56308200745914 /* AppDelegate.m in Sources */,
 				C0F79DD01C045422002217DF /* RBChart.m in Sources */,
+				C0B47F1A1C04852F00FD646E /* NSArray+RBAddition.m in Sources */,
 				C0F79DDD1C0454F2002217DF /* RBLineChart.m in Sources */,
 				C0F79DE91C045BF9002217DF /* RBChartCanvas.m in Sources */,
 				C0F79DE61C045A04002217DF /* RBNode.m in Sources */,

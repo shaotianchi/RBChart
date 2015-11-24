@@ -54,8 +54,6 @@ kInitWithHandler
 
 - (void)decoratorPath:(UIBezierPath *)path {
     path.lineWidth = _lineWidth;
-    [_lineColor setStroke];
-    [path stroke];
 }
 
 @end
