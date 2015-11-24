@@ -10,19 +10,11 @@
 
 typedef void(^RBChartInitHandler)(id);
 typedef void(^ChartTouchHandler)(NSInteger index, NSArray *values);
-//#define kSolidRound(F, S) ^(CGRect rect){\
-//                        UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect:rect];\
-//                        [F setFill];\
-//                        [ovalPath fill];\
-//                        [S setStroke];\
-//                        [ovalPath stroke];\
-//                    }
-//
-//#define kHollowRound(F, S, W) ^(CGRect rect) {\
-//                        UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect:rect];\
-//                        [F setFill];\
-//                        [ovalPath fill];\
-//                        ovalPath.lineWidth = W;\
-//                        [S setStroke];\
-//                        [ovalPath stroke];\
-//                     }
+
+#define kRBChartInit - (instancetype)initWithHandler:(RBChartInitHandler)handler { \
+                         self = [super init]; \
+                         if (self) { \
+                             handler(self); \
+                         } \
+                         return self; \
+                     } \

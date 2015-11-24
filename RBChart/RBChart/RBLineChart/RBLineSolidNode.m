@@ -9,6 +9,7 @@
 #import "RBLineSolidNode.h"
 
 @implementation RBLineSolidNode
+@synthesize values = _values;
 
 - (instancetype)initWithHandler:(RBChartInitHandler)handler {
     self = [super init];
@@ -18,7 +19,7 @@
     return self;
 }
 
-- (void)drawNodeAtRect:(CGRect)rect {
+- (void)drawWithDecorator:(id<RBChartDecorator>)decorator rect:(CGRect)rect {
     UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect:rect];
     [_fillColor setFill];
     [ovalPath fill];

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RBChartProtocols.h"
 
-@interface RBLineIndicator : UIView
+@interface RBLineIndicator : RBChartIndicator
 - (void)setupTitles:(NSArray *)titles values:(NSArray *)values;
 - (void)showInView:(UIView *)view atPosition:(CGPoint)point;
 @property (assign, readonly, nonatomic) NSInteger touchIdentifier;

@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RBChartProtocols.h"
 #import "RBChartDefines.h"
 
-@protocol RBLineNode <NSObject>
+@protocol RBLineNode <RBChartElement>
 
 @required
-- (void)drawNodeAtRect:(CGRect)rect;
 - (instancetype)initWithHandler:(RBChartInitHandler)handler;
 
 @end

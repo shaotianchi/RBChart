@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "RBLineProtocol.h"
+#import "RBChartProtocols.h"
 #import "RBChartDefines.h"
 
 @interface RBLineSolidNode : NSObject <RBLineNode>
+@property (assign, nonatomic) CGFloat nodeWidth;
 @property (strong, nonatomic) UIColor *fillColor;
 @property (strong, nonatomic) UIColor *strokeColor;
 @end

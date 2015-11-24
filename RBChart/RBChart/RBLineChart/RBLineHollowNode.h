@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RBChartProtocols.h"
 #import "RBLineProtocol.h"
-#import "RBChartDefines.h"
 
 @interface RBLineHollowNode : NSObject <RBLineNode>
+@property (assign, nonatomic) CGFloat nodeWidth;
 @property (assign, nonatomic) CGFloat lineWidth;
 @property (strong, nonatomic) UIColor *strokeColor;
 @end

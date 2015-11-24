@@ -7,8 +7,10 @@
 //
 
 #import "RBLineHollowNode.h"
+#import "RBBaseChartDecorator.h"
 
 @implementation RBLineHollowNode
+@synthesize values = _values;
 
 - (instancetype)initWithHandler:(RBChartInitHandler)handler {
     self = [super init];
@@ -19,7 +21,7 @@
     return self;
 }
 
-- (void)drawNodeAtRect:(CGRect)rect {
+- (void)drawWithDecorator:(RBBaseChartDecorator *)decorator rect:(CGRect)rect {
     UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect:rect];
     [[UIColor clearColor] setFill];
     [ovalPath fill];
