@@ -14,25 +14,18 @@
 		B89F90EE1B56308200745914 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89F90ED1B56308200745914 /* Images.xcassets */; };
 		B89F90F11B56308200745914 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89F90EF1B56308200745914 /* LaunchScreen.xib */; };
 		B89F90FD1B56308200745914 /* RBChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B89F90FC1B56308200745914 /* RBChartTests.m */; };
-		B89F91291B56312C00745914 /* RBLineIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B89F91241B56312C00745914 /* RBLineIndicator.m */; };
-		B89F912C1B56325400745914 /* RBLineSolidNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B89F912B1B56325400745914 /* RBLineSolidNode.m */; };
-		B89F91331B56342400745914 /* RBLineHollowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B89F91321B56342400745914 /* RBLineHollowNode.m */; };
-		C09EA2A21BF86858004F07F4 /* RBLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C09EA2A11BF86858004F07F4 /* RBLine.m */; };
-		C09EA2A51BF86C69004F07F4 /* RBBaseChartDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = C09EA2A41BF86C69004F07F4 /* RBBaseChartDecorator.m */; };
-		C0D282961BFC99C90002AC72 /* RBLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D282951BFC99C90002AC72 /* RBLineChart.m */; };
-		C0D282991BFCBC470002AC72 /* RBLineChartDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D282981BFCBC470002AC72 /* RBLineChartDecorator.m */; };
+		C0A6390A1C05915800790A1B /* RBPieChartDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A639091C05915800790A1B /* RBPieChartDrawer.m */; };
+		C0A6390D1C0592A000790A1B /* RBPie.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A6390C1C0592A000790A1B /* RBPie.m */; };
+		C0B47F1E1C049C4900FD646E /* RBBarChartDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B47F1D1C049C4900FD646E /* RBBarChartDrawer.m */; };
+		C0B47F211C049C6600FD646E /* RBChartBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B47F201C049C6600FD646E /* RBChartBar.m */; };
 		C0D2829C1BFCC2100002AC72 /* NSArray+RBAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D2829B1BFCC2100002AC72 /* NSArray+RBAddition.m */; };
-		C0D2829F1BFCD31C0002AC72 /* RBAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D2829E1BFCD31C0002AC72 /* RBAxis.m */; };
-		C0D282A21BFD83240002AC72 /* RBChartIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D282A11BFD83240002AC72 /* RBChartIndicator.m */; };
-		C0B47F1A1C04852F00FD646E /* NSArray+RBAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B47F191C04852F00FD646E /* NSArray+RBAddition.m */; };
 		C0F79DD01C045422002217DF /* RBChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DCF1C045422002217DF /* RBChart.m */; };
 		C0F79DD31C045435002217DF /* RBChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DD21C045435002217DF /* RBChartData.m */; };
 		C0F79DD61C045443002217DF /* RBChartDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DD51C045443002217DF /* RBChartDrawer.m */; };
 		C0F79DD91C04544E002217DF /* RBChartAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DD81C04544E002217DF /* RBChartAxis.m */; };
-		C0F79DDD1C0454F2002217DF /* RBLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DDC1C0454F2002217DF /* RBLineChart.m */; };
 		C0F79DE01C045696002217DF /* RBLineChartDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DDF1C045696002217DF /* RBLineChartDrawer.m */; };
-		C0F79DE31C0459F9002217DF /* RBLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DE21C0459F9002217DF /* RBLine.m */; };
-		C0F79DE61C045A04002217DF /* RBNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DE51C045A04002217DF /* RBNode.m */; };
+		C0F79DE31C0459F9002217DF /* RBChartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DE21C0459F9002217DF /* RBChartLine.m */; };
+		C0F79DE61C045A04002217DF /* RBChartNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DE51C045A04002217DF /* RBChartNode.m */; };
 		C0F79DE91C045BF9002217DF /* RBChartCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F79DE81C045BF9002217DF /* RBChartCanvas.m */; };
 /* End PBXBuildFile section */
 
@@ -60,31 +53,16 @@
 		B89F90F61B56308200745914 /* RBChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89F90FB1B56308200745914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B89F90FC1B56308200745914 /* RBChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBChartTests.m; sourceTree = "<group>"; };
-		B89F91071B5630DD00745914 /* RBChartDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartDefines.h; sourceTree = "<group>"; };
-		B89F91231B56312C00745914 /* RBLineIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLineIndicator.h; sourceTree = "<group>"; };
-		B89F91241B56312C00745914 /* RBLineIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLineIndicator.m; sourceTree = "<group>"; };
-		B89F912A1B56325400745914 /* RBLineSolidNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBLineSolidNode.h; path = ../../RBLineChart/RBLineSolidNode.h; sourceTree = "<group>"; };
-		B89F912B1B56325400745914 /* RBLineSolidNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBLineSolidNode.m; path = ../../RBLineChart/RBLineSolidNode.m; sourceTree = "<group>"; };
-		B89F91301B5632ED00745914 /* RBLineProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLineProtocol.h; sourceTree = "<group>"; };
-		B89F91311B56342400745914 /* RBLineHollowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBLineHollowNode.h; path = ../../RBLineChart/RBLineHollowNode.h; sourceTree = "<group>"; };
-		B89F91321B56342400745914 /* RBLineHollowNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBLineHollowNode.m; path = ../../RBLineChart/RBLineHollowNode.m; sourceTree = "<group>"; };
-		C086E04B1BFC7CE900218A6E /* RBChartProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBChartProtocols.h; sourceTree = "<group>"; };
-		C09EA2A01BF86858004F07F4 /* RBLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLine.h; sourceTree = "<group>"; };
-		C09EA2A11BF86858004F07F4 /* RBLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLine.m; sourceTree = "<group>"; };
-		C09EA2A31BF86C69004F07F4 /* RBBaseChartDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBaseChartDecorator.h; sourceTree = "<group>"; };
-		C09EA2A41BF86C69004F07F4 /* RBBaseChartDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBaseChartDecorator.m; sourceTree = "<group>"; };
-		C0D282941BFC99C90002AC72 /* RBLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLineChart.h; sourceTree = "<group>"; };
-		C0D282951BFC99C90002AC72 /* RBLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLineChart.m; sourceTree = "<group>"; };
-		C0D282971BFCBC470002AC72 /* RBLineChartDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLineChartDecorator.h; sourceTree = "<group>"; };
-		C0D282981BFCBC470002AC72 /* RBLineChartDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLineChartDecorator.m; sourceTree = "<group>"; };
+		C0A639081C05915800790A1B /* RBPieChartDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBPieChartDrawer.h; sourceTree = "<group>"; };
+		C0A639091C05915800790A1B /* RBPieChartDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBPieChartDrawer.m; sourceTree = "<group>"; };
+		C0A6390B1C0592A000790A1B /* RBPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBPie.h; sourceTree = "<group>"; };
+		C0A6390C1C0592A000790A1B /* RBPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBPie.m; sourceTree = "<group>"; };
+		C0B47F1C1C049C4900FD646E /* RBBarChartDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBarChartDrawer.h; sourceTree = "<group>"; };
+		C0B47F1D1C049C4900FD646E /* RBBarChartDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBarChartDrawer.m; sourceTree = "<group>"; };
+		C0B47F1F1C049C6600FD646E /* RBChartBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartBar.h; sourceTree = "<group>"; };
+		C0B47F201C049C6600FD646E /* RBChartBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChartBar.m; sourceTree = "<group>"; };
 		C0D2829A1BFCC2100002AC72 /* NSArray+RBAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RBAddition.h"; sourceTree = "<group>"; };
 		C0D2829B1BFCC2100002AC72 /* NSArray+RBAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RBAddition.m"; sourceTree = "<group>"; };
-		C0D2829D1BFCD31C0002AC72 /* RBAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBAxis.h; sourceTree = "<group>"; };
-		C0D2829E1BFCD31C0002AC72 /* RBAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBAxis.m; sourceTree = "<group>"; };
-		C0D282A01BFD83240002AC72 /* RBChartIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartIndicator.h; sourceTree = "<group>"; };
-		C0D282A11BFD83240002AC72 /* RBChartIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChartIndicator.m; sourceTree = "<group>"; };
-		C0B47F181C04852F00FD646E /* NSArray+RBAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RBAddition.h"; sourceTree = "<group>"; };
-		C0B47F191C04852F00FD646E /* NSArray+RBAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RBAddition.m"; sourceTree = "<group>"; };
 		C0F79DCE1C045422002217DF /* RBChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChart.h; sourceTree = "<group>"; };
 		C0F79DCF1C045422002217DF /* RBChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChart.m; sourceTree = "<group>"; };
 		C0F79DD11C045435002217DF /* RBChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartData.h; sourceTree = "<group>"; };
@@ -93,14 +71,12 @@
 		C0F79DD51C045443002217DF /* RBChartDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChartDrawer.m; sourceTree = "<group>"; };
 		C0F79DD71C04544E002217DF /* RBChartAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartAxis.h; sourceTree = "<group>"; };
 		C0F79DD81C04544E002217DF /* RBChartAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChartAxis.m; sourceTree = "<group>"; };
-		C0F79DDB1C0454F2002217DF /* RBLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLineChart.h; sourceTree = "<group>"; };
-		C0F79DDC1C0454F2002217DF /* RBLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLineChart.m; sourceTree = "<group>"; };
 		C0F79DDE1C045696002217DF /* RBLineChartDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLineChartDrawer.h; sourceTree = "<group>"; };
 		C0F79DDF1C045696002217DF /* RBLineChartDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLineChartDrawer.m; sourceTree = "<group>"; };
-		C0F79DE11C0459F9002217DF /* RBLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLine.h; sourceTree = "<group>"; };
-		C0F79DE21C0459F9002217DF /* RBLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLine.m; sourceTree = "<group>"; };
-		C0F79DE41C045A04002217DF /* RBNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBNode.h; sourceTree = "<group>"; };
-		C0F79DE51C045A04002217DF /* RBNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBNode.m; sourceTree = "<group>"; };
+		C0F79DE11C0459F9002217DF /* RBChartLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartLine.h; sourceTree = "<group>"; };
+		C0F79DE21C0459F9002217DF /* RBChartLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChartLine.m; sourceTree = "<group>"; };
+		C0F79DE41C045A04002217DF /* RBChartNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartNode.h; sourceTree = "<group>"; };
+		C0F79DE51C045A04002217DF /* RBChartNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChartNode.m; sourceTree = "<group>"; };
 		C0F79DE71C045BF9002217DF /* RBChartCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartCanvas.h; sourceTree = "<group>"; };
 		C0F79DE81C045BF9002217DF /* RBChartCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBChartCanvas.m; sourceTree = "<group>"; };
 		C0F79DEA1C046C4B002217DF /* RBChartDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBChartDefines.h; sourceTree = "<group>"; };
@@ -145,8 +121,6 @@
 		B89F90DF1B56308200745914 /* RBChart */ = {
 			isa = PBXGroup;
 			children = (
-				C0B47F181C04852F00FD646E /* NSArray+RBAddition.h */,
-				C0B47F191C04852F00FD646E /* NSArray+RBAddition.m */,
 				B89F91061B5630DD00745914 /* RBChart */,
 				B89F90E41B56308200745914 /* AppDelegate.h */,
 				B89F90E51B56308200745914 /* AppDelegate.m */,
@@ -191,17 +165,9 @@
 		B89F91061B5630DD00745914 /* RBChart */ = {
 			isa = PBXGroup;
 			children = (
-				C0D2829D1BFCD31C0002AC72 /* RBAxis.h */,
-				C0D2829E1BFCD31C0002AC72 /* RBAxis.m */,
-				C086E04B1BFC7CE900218A6E /* RBChartProtocols.h */,
-				B89F91071B5630DD00745914 /* RBChartDefines.h */,
-				C09EA2A31BF86C69004F07F4 /* RBBaseChartDecorator.h */,
-				C09EA2A41BF86C69004F07F4 /* RBBaseChartDecorator.m */,
-				B89F91341B56407800745914 /* RBBarChart */,
-				B89F911A1B56310D00745914 /* RBLineChart */,
-				C09EA2991BF85958004F07F4 /* RBNewLineChart */,
-				C0D282A01BFD83240002AC72 /* RBChartIndicator.h */,
-				C0D282A11BFD83240002AC72 /* RBChartIndicator.m */,
+				C0A639071C05913E00790A1B /* RBPieChart */,
+				C0B47F1B1C049C2A00FD646E /* RBBarChart */,
+				C0F79DDA1C0454DD002217DF /* RBLineChart */,
 				C0F79DCE1C045422002217DF /* RBChart.h */,
 				C0F79DCF1C045422002217DF /* RBChart.m */,
 				C0F79DD11C045435002217DF /* RBChartData.h */,
@@ -212,60 +178,44 @@
 				C0F79DD81C04544E002217DF /* RBChartAxis.m */,
 				C0F79DE71C045BF9002217DF /* RBChartCanvas.h */,
 				C0F79DE81C045BF9002217DF /* RBChartCanvas.m */,
-				C0F79DDA1C0454DD002217DF /* RBLineChart */,
 				C0F79DEA1C046C4B002217DF /* RBChartDefines.h */,
 			);
 			path = RBChart;
 			sourceTree = "<group>";
 		};
-		C0F79DDA1C0454DD002217DF /* RBLineChart */ = {
+		C0A639071C05913E00790A1B /* RBPieChart */ = {
 			isa = PBXGroup;
 			children = (
-				B89F91301B5632ED00745914 /* RBLineProtocol.h */,
-				B89F91231B56312C00745914 /* RBLineIndicator.h */,
-				B89F91241B56312C00745914 /* RBLineIndicator.m */,
-				C0F79DDB1C0454F2002217DF /* RBLineChart.h */,
-				C0F79DDC1C0454F2002217DF /* RBLineChart.m */,
-				C0F79DDE1C045696002217DF /* RBLineChartDrawer.h */,
-				C0F79DDF1C045696002217DF /* RBLineChartDrawer.m */,
-				C0F79DE11C0459F9002217DF /* RBLine.h */,
-				C0F79DE21C0459F9002217DF /* RBLine.m */,
-				C0F79DE41C045A04002217DF /* RBNode.h */,
-				C0F79DE51C045A04002217DF /* RBNode.m */,
+				C0A639081C05915800790A1B /* RBPieChartDrawer.h */,
+				C0A639091C05915800790A1B /* RBPieChartDrawer.m */,
+				C0A6390B1C0592A000790A1B /* RBPie.h */,
+				C0A6390C1C0592A000790A1B /* RBPie.m */,
 			);
-			path = RBLineChart;
+			path = RBPieChart;
 			sourceTree = "<group>";
 		};
-		B89F91341B56407800745914 /* RBBarChart */ = {
+		C0B47F1B1C049C2A00FD646E /* RBBarChart */ = {
 			isa = PBXGroup;
 			children = (
+				C0B47F1C1C049C4900FD646E /* RBBarChartDrawer.h */,
+				C0B47F1D1C049C4900FD646E /* RBBarChartDrawer.m */,
+				C0B47F1F1C049C6600FD646E /* RBChartBar.h */,
+				C0B47F201C049C6600FD646E /* RBChartBar.m */,
 			);
 			path = RBBarChart;
 			sourceTree = "<group>";
 		};
-		C09EA2991BF85958004F07F4 /* RBNewLineChart */ = {
+		C0F79DDA1C0454DD002217DF /* RBLineChart */ = {
 			isa = PBXGroup;
 			children = (
-				C0D282931BFC99800002AC72 /* RBLineChartNode */,
-				C09EA2A01BF86858004F07F4 /* RBLine.h */,
-				C09EA2A11BF86858004F07F4 /* RBLine.m */,
-				C0D282941BFC99C90002AC72 /* RBLineChart.h */,
-				C0D282951BFC99C90002AC72 /* RBLineChart.m */,
-				C0D282971BFCBC470002AC72 /* RBLineChartDecorator.h */,
-				C0D282981BFCBC470002AC72 /* RBLineChartDecorator.m */,
+				C0F79DDE1C045696002217DF /* RBLineChartDrawer.h */,
+				C0F79DDF1C045696002217DF /* RBLineChartDrawer.m */,
+				C0F79DE11C0459F9002217DF /* RBChartLine.h */,
+				C0F79DE21C0459F9002217DF /* RBChartLine.m */,
+				C0F79DE41C045A04002217DF /* RBChartNode.h */,
+				C0F79DE51C045A04002217DF /* RBChartNode.m */,
 			);
-			path = RBNewLineChart;
-			sourceTree = "<group>";
-		};
-		C0D282931BFC99800002AC72 /* RBLineChartNode */ = {
-			isa = PBXGroup;
-			children = (
-				B89F912A1B56325400745914 /* RBLineSolidNode.h */,
-				B89F912B1B56325400745914 /* RBLineSolidNode.m */,
-				B89F91311B56342400745914 /* RBLineHollowNode.h */,
-				B89F91321B56342400745914 /* RBLineHollowNode.m */,
-			);
-			path = RBLineChartNode;
+			path = RBLineChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,28 +319,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B89F90E91B56308200745914 /* ViewController.m in Sources */,
-				C0D282A21BFD83240002AC72 /* RBChartIndicator.m in Sources */,
-				C0D282961BFC99C90002AC72 /* RBLineChart.m in Sources */,
 				C0D2829C1BFCC2100002AC72 /* NSArray+RBAddition.m in Sources */,
-				B89F91331B56342400745914 /* RBLineHollowNode.m in Sources */,
-				B89F91291B56312C00745914 /* RBLineIndicator.m in Sources */,
-				C09EA2A51BF86C69004F07F4 /* RBBaseChartDecorator.m in Sources */,
-				C0D2829F1BFCD31C0002AC72 /* RBAxis.m in Sources */,
-				C09EA2A21BF86858004F07F4 /* RBLine.m in Sources */,
+				C0B47F211C049C6600FD646E /* RBChartBar.m in Sources */,
 				C0F79DE01C045696002217DF /* RBLineChartDrawer.m in Sources */,
 				C0F79DD31C045435002217DF /* RBChartData.m in Sources */,
 				C0F79DD61C045443002217DF /* RBChartDrawer.m in Sources */,
+				C0A6390D1C0592A000790A1B /* RBPie.m in Sources */,
 				C0F79DD91C04544E002217DF /* RBChartAxis.m in Sources */,
 				B89F90E61B56308200745914 /* AppDelegate.m in Sources */,
 				C0F79DD01C045422002217DF /* RBChart.m in Sources */,
-				C0B47F1A1C04852F00FD646E /* NSArray+RBAddition.m in Sources */,
-				C0F79DDD1C0454F2002217DF /* RBLineChart.m in Sources */,
 				C0F79DE91C045BF9002217DF /* RBChartCanvas.m in Sources */,
-				C0F79DE61C045A04002217DF /* RBNode.m in Sources */,
+				C0F79DE61C045A04002217DF /* RBChartNode.m in Sources */,
 				B89F90E31B56308200745914 /* main.m in Sources */,
-				C0D282991BFCBC470002AC72 /* RBLineChartDecorator.m in Sources */,
-				B89F912C1B56325400745914 /* RBLineSolidNode.m in Sources */,
-				C0F79DE31C0459F9002217DF /* RBLine.m in Sources */,
+				C0B47F1E1C049C4900FD646E /* RBBarChartDrawer.m in Sources */,
+				C0F79DE31C0459F9002217DF /* RBChartLine.m in Sources */,
+				C0A6390A1C05915800790A1B /* RBPieChartDrawer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

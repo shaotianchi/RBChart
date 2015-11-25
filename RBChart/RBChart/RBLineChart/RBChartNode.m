@@ -6,55 +6,55 @@
 //  Copyright © 2015年 rainbow. All rights reserved.
 //
 
-#import "RBNode.h"
+#import "RBChartNode.h"
 
 #pragma mark - 自定义 Node Interface
 /**
  *  圆形实心 Node
  */
-@interface RBSolidNode : RBNode
+@interface RBSolidNode : RBChartNode
 
 @end
 
 /**
  *  三角形 Node
  */
-@interface RBTriangleNode : RBNode
+@interface RBTriangleNode : RBChartNode
 
 @end
 
 #pragma mark - RBNode
 
-@implementation RBNode
+@implementation RBChartNode
 
-kInitWithHandler
+kInitWithHandler_M
 
 + (instancetype)nodeWithType:(RBNodeType)type {
-    RBNode *node = nil;
+    RBChartNode *node = nil;
     switch (type) {
         case RBDefaultBlueNode:
-            node = [[RBNode alloc] initWithHandler:^(RBNode *node) {
+            node = [[RBChartNode alloc] initWithHandler:^(RBChartNode *node) {
                 node.nodeColor = kRBDefaultBlue;
                 node.nodeWidth = 5.;
                 node.borderWidth = 2.;
             }];
             break;
         case RBDefaultYellowNode:
-            node = [[RBNode alloc] initWithHandler:^(RBNode *node) {
+            node = [[RBChartNode alloc] initWithHandler:^(RBChartNode *node) {
                 node.nodeColor = kRBDefaultYellow;
                 node.nodeWidth = 5.;
                 node.borderWidth = 2.;
             }];
             break;
         case RBDefaultSolidNode:
-            node = [[RBSolidNode alloc] initWithHandler:^(RBNode *node) {
+            node = [[RBSolidNode alloc] initWithHandler:^(RBChartNode *node) {
                 node.nodeColor = kRBDefaultBlue;
                 node.nodeWidth = 5.;
                 node.borderWidth = 2.;
             }];
             break;
         case TriangleNode:
-            node = [[RBTriangleNode alloc] initWithHandler:^(RBNode *node) {
+            node = [[RBTriangleNode alloc] initWithHandler:^(RBChartNode *node) {
                 node.nodeColor = kRBDefaultBlue;
                 node.nodeWidth = 5.;
                 node.borderWidth = 2.;

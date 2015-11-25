@@ -8,6 +8,7 @@
 
 #import "RBChartCanvas.h"
 #import "NSArray+RBAddition.h"
+#import "RBChartDrawer.h"
 
 @interface RBChartGridCanvas : RBChartCanvas
 @property (strong, nonatomic) UIBezierPath *middlePath;

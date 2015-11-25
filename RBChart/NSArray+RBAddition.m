@@ -33,6 +33,19 @@
     return result;
 }
 
+- (NSNumber *)rb_sum {
+    CGFloat sum = 0;
+    for (NSNumber *number in self) {
+        if (![number isKindOfClass:[NSNumber class]]) {
+            return @(-CGFLOAT_MAX);
+        }
+        
+        sum += [number doubleValue];
+    }
+    
+    return @(sum);
+}
+
 - (id)rb_max {
     NSArray *arr = [self sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         return [obj1 compare:obj2];

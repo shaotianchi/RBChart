@@ -7,14 +7,14 @@
 //
 
 #import "RBChartDrawer.h"
-#import "RBLine.h"
-#import "RBNode.h"
+#import "RBChartLine.h"
+#import "RBChartNode.h"
 #import "RBChartDefines.h"
 
 @interface RBLineChartDrawer : RBChartDrawer
-@property (strong, nonatomic) RBLine *line;
-@property (strong, nonatomic) RBNode *node;
+@property (strong, nonatomic) RBChartLine *line;
+@property (strong, nonatomic) RBChartNode *node;
 
-- (instancetype)initWithHandler:(RBChartInitHandler)handler;
+kInitWithHandler_H
 
 @end

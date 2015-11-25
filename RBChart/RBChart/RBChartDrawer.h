@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "RBChartData.h"
+#import "RBChartCanvas.h"
 
 typedef NSArray<NSNumber *> DataGroup;
-
-@class RBChartCanvas;
 
 @interface RBChartDrawer : NSObject
 @property (strong, nonatomic) DataGroup *datas;

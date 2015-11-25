@@ -15,12 +15,12 @@ typedef NS_ENUM(NSUInteger, RBLineType) {
     RBDefaultDashLine,
 };
 
-@interface RBLine : NSObject
+@interface RBChartLine : NSObject
 @property (assign, nonatomic) CGFloat lineWidth;
 @property (copy, nonatomic) UIColor *lineColor;
 
 + (instancetype)lineWithType:(RBLineType)type;
-- (instancetype)initWithHandler:(RBChartInitHandler)handler;
+kInitWithHandler_H
 
 - (void)decoratorPath:(UIBezierPath *)path;
 
