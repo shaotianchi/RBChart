@@ -10,8 +10,17 @@
 #import "RBChartAxis.h"
 #import "RBChartCanvas.h"
 
+typedef NS_ENUM(NSUInteger, RBChartType) {
+    RBDefaultLineChart,
+    RBDefaultBarChart,
+    RBDefaultPieChart,
+};
+
 @interface RBChart : UIView
 @property (strong, nonatomic) RBChartCanvas *canvas;
 @property (strong, nonatomic) RBChartAxis *xAxis;
 @property (strong, nonatomic) RBChartAxis *yAxis;
+
++ (instancetype)chartWithType:(RBChartType)type;
+
 @end

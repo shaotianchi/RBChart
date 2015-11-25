@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RBChartDrawer.h"
 #import "RBChartDefines.h"
+
+@class RBChartDrawer;
 
 typedef NS_ENUM(NSUInteger, RBChartCanvasType) {
     RBDefaultCanvas,

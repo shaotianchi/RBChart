@@ -25,13 +25,13 @@ typedef struct LinePoints LinePoints;
 /**
  *  RBNode - 默认为圆形
  */
-@interface RBNode : NSObject
+@interface RBChartNode : NSObject
 @property (assign, nonatomic) CGFloat nodeWidth;
 @property (assign, nonatomic) CGFloat borderWidth;
 @property (copy, nonatomic) UIColor *nodeColor;
 
 + (instancetype)nodeWithType:(RBNodeType)type;
-- (instancetype)initWithHandler:(RBChartInitHandler)handler;
+kInitWithHandler_H
 
 /**
  *  对 path 进行装饰

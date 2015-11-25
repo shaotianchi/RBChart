@@ -6,9 +6,9 @@
 //  Copyright © 2015年 rainbow. All rights reserved.
 //
 
-#import "RBLine.h"
+#import "RBChartLine.h"
 
-@interface RBDashLine : RBLine
+@interface RBDashLine : RBChartLine
 
 @end
 
@@ -22,21 +22,21 @@
 
 @end
 
-@implementation RBLine
+@implementation RBChartLine
 
-kInitWithHandler
+kInitWithHandler_M
 
 + (instancetype)lineWithType:(RBLineType)type {
-    RBLine *line = nil;
+    RBChartLine *line = nil;
     switch (type) {
         case RBDefaultBlueLine:
-            line = [[RBLine alloc] initWithHandler:^(RBLine *line) {
+            line = [[RBChartLine alloc] initWithHandler:^(RBChartLine *line) {
                 line.lineColor = kRBDefaultBlue;
                 line.lineWidth = 2.;
             }];
             break;
         case RBDefaultYellowLine:
-            line = [[RBLine alloc] initWithHandler:^(RBLine *line) {
+            line = [[RBChartLine alloc] initWithHandler:^(RBChartLine *line) {
                 line.lineColor = kRBDefaultYellow;
                 line.lineWidth = 2.;
             }];

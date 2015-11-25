@@ -16,7 +16,7 @@
 @implementation RBLineChartDrawer
 @synthesize datas = _datas;
 
-kInitWithHandler
+kInitWithHandler_M
 
 - (void)drawAtRect:(CGRect)rect canvas:(RBChartCanvas *)canvas {
     CGFloat spacing = (CGRectGetWidth(rect) - canvas.leading * 2) / (_datas.count - 1);
