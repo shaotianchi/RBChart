@@ -16,7 +16,7 @@
 
 @implementation RBChartGridCanvas
 
-- (void)drawIfNeed:(CGRect)rect {
+- (void)drawAtRect:(CGRect)rect showValues:(BOOL)showValues {
     [self.middlePath moveToPoint:CGPointMake(0, CGRectGetHeight(rect) / 2.)];
     [self.middlePath addLineToPoint:CGPointMake(CGRectGetWidth(rect), CGRectGetHeight(rect) / 2.)];
     [[UIColor whiteColor] setStroke];
@@ -36,7 +36,7 @@
         [[UIColor whiteColor] setStroke];
         [path stroke];
     }
-    [super drawIfNeed:rect];
+    [super drawAtRect:rect showValues:showValues];
 }
 
 - (UIBezierPath *)middlePath {
@@ -47,6 +47,10 @@
     return _middlePath;
 }
 
+@end
+
+@interface RBChartCanvas ()
+@property (assign, nonatomic) NSUInteger mapDataCount;
 @end
 
 @implementation RBChartCanvas
@@ -72,9 +76,9 @@
     
 }
 
-- (void)drawIfNeed:(CGRect)rect {
+- (void)drawAtRect:(CGRect)rect showValues:(BOOL)showValues {
     for (RBChartDrawer *drawer in _drawers) {
-        [drawer drawAtRect:rect canvas:self];
+        [drawer drawAtRect:rect canvas:self showValues:showValues];
     }
 }
 
@@ -82,5 +86,40 @@
     handler(self);
 }
 
+- (UIFont *)valueStringFont {
+    if (!_valueStringFont) {
+        _valueStringFont = [UIFont systemFontOfSize:10];
+    }
+    
+    return _valueStringFont;
+}
 
+- (UIColor *)valueStringColor {
+    if (!_valueStringColor) {
+        _valueStringColor = [UIColor whiteColor];
+    }
+    
+    return _valueStringColor;
+}
+
+- (NSDictionary *)valueStringAttributes {
+    return @{NSFontAttributeName            : self.valueStringFont,
+             NSForegroundColorAttributeName : self.valueStringColor};
+}
+
+- (NSUInteger)dataCount {
+    if ( _mapDataCount <= 0) {
+        self.mapDataCount = [[[_drawers rb_map:^id(RBChartDrawer *drawer) {
+            return @(drawer.datas.count);
+        }] rb_max] unsignedIntegerValue];
+    }
+    
+    return _mapDataCount;
+}
+
+- (NSArray *)valuesAtIndex:(NSUInteger)index {
+    return [_drawers rb_map:^id(RBChartDrawer *drawer) {
+        return drawer.datas[index];
+    }];
+}
 @end

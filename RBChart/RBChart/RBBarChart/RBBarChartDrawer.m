@@ -13,23 +13,24 @@
 
 kInitWithHandler_M
 
-- (void)drawAtRect:(CGRect)rect canvas:(RBChartCanvas *)canvas {
+- (void)drawAtRect:(CGRect)rect canvas:(RBChartCanvas *)canvas showValues:(BOOL)showValues {
     NSUInteger drawerIndex = [canvas.drawers indexOfObject:self];
-    CGFloat spacing = (CGRectGetWidth(rect) - canvas.leading * 2) / (_datas.count - 1);
+    CGFloat spacing = (CGRectGetWidth(rect) - canvas.leading * 2) / (_datas.count * canvas.drawers.count - 1);
     NSUInteger i = 0;
-    CGFloat barWidth = spacing / 2 / canvas.drawers.count;
+    CGFloat barWidth = spacing / 2;
     for (NSNumber *valuePoint in _datas) {
         CGFloat scale = valuePoint.floatValue / canvas.maxValue;
-        CGPoint center = CGPointMake(canvas.leading + spacing * i, (1 - scale) * CGRectGetHeight(rect));
+        CGPoint center = CGPointMake(canvas.leading + 2 * spacing * i, (1 - scale) * CGRectGetHeight(rect));
         i ++;
         
         CGFloat barHeight = CGRectGetHeight(rect) * scale;
-        
-        CGRect barFrame = CGRectMake(drawerIndex * barWidth + center.x - spacing / 4, CGRectGetHeight(rect) - barHeight, barWidth, barHeight);
+        CGRect barFrame = CGRectMake(barWidth * drawerIndex + center.x, center.y, barWidth, barHeight);
         UIBezierPath *barPath = [UIBezierPath bezierPathWithRect:barFrame];
         [_bar decoratorPath:barPath];
-        [_bar.barColor setStroke];
-        [barPath stroke];
+        
+        if (showValues) {
+            [self drawValue:valuePoint center:CGPointMake(CGRectGetMidX(barFrame), CGRectGetMinY(barFrame)) offset:CGPointMake(0, 10) attributes:canvas.valueStringAttributes];
+        }
     }
 }
 

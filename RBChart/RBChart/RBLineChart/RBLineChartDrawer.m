@@ -18,7 +18,7 @@
 
 kInitWithHandler_M
 
-- (void)drawAtRect:(CGRect)rect canvas:(RBChartCanvas *)canvas {
+- (void)drawAtRect:(CGRect)rect canvas:(RBChartCanvas *)canvas showValues:(BOOL)showValues {
     CGFloat spacing = (CGRectGetWidth(rect) - canvas.leading * 2) / (_datas.count - 1);
     NSUInteger i = 0;
     CGPoint lastCenter = CGPointZero;
@@ -26,6 +26,8 @@ kInitWithHandler_M
         CGFloat scale = valuePoint.floatValue / canvas.maxValue;
         CGPoint center = CGPointMake(canvas.leading + spacing * i, (1 - scale) * CGRectGetHeight(rect));
         i ++;
+        
+        
         
         CGRect rect =  CGRectMake(center.x - _node.nodeWidth / 2., center.y - _node.nodeWidth / 2., _node.nodeWidth, _node.nodeWidth);
         UIBezierPath *nodePath = [UIBezierPath bezierPathWithOvalInRect:rect];
@@ -44,9 +46,12 @@ kInitWithHandler_M
             [linePath stroke];
         }
         
+        if (showValues) {
+            [self drawValue:valuePoint center:center offset:CGPointMake(0, 10) attributes:canvas.valueStringAttributes];
+        }
+        
         lastCenter = center;
     }
-    
 }
 
 @end

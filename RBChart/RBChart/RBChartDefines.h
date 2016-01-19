@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^RBChartInitHandler)(id);
-typedef void(^ChartTouchHandler)(NSInteger index, NSArray *values);
+typedef void(^RBChartTouchHandler)(NSInteger index, NSArray *values);
 
 #define kInitWithHandler_M - (instancetype)initWithHandler:(RBChartInitHandler)handler {  \
                              self = [super init];                                       \

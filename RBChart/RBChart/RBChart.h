@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RBChartAxis.h"
 #import "RBChartCanvas.h"
+#import "RBChartDefines.h"
 
 typedef NS_ENUM(NSUInteger, RBChartType) {
     RBDefaultLineChart,
@@ -21,6 +22,9 @@ typedef NS_ENUM(NSUInteger, RBChartType) {
 @property (strong, nonatomic) RBChartAxis *xAxis;
 @property (strong, nonatomic) RBChartAxis *yAxis;
 
+@property (copy, nonatomic) RBChartTouchHandler touchHandler;
+
 + (instancetype)chartWithType:(RBChartType)type;
+- (void)showValues:(BOOL)showValues;
 
 @end

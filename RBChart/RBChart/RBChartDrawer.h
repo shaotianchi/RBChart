@@ -15,6 +15,7 @@ typedef NSArray<NSNumber *> DataGroup;
 @interface RBChartDrawer : NSObject
 @property (strong, nonatomic) DataGroup *datas;
 
-- (void)drawAtRect:(CGRect)rect canvas:(RBChartCanvas *)canvas;
+- (void)drawAtRect:(CGRect)rect canvas:(RBChartCanvas *)canvas showValues:(BOOL)showValues;
+- (void)drawValue:(NSNumber *)value center:(CGPoint)center offset:(CGPoint)offset attributes:(NSDictionary *)attributes;
 
 @end

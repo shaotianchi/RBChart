@@ -20,6 +20,10 @@
 
 @end
 
+@interface RBChart ()
+@property (assign, nonatomic) BOOL showValues;
+@end
+
 @implementation RBChart
 
 + (instancetype)chartWithType:(RBChartType)type {
@@ -45,8 +49,46 @@
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
+    [_canvas drawAtRect:rect showValues:_showValues];
+}
+
+- (void)showValues:(BOOL)showValues {
+    self.showValues = showValues;
+    [self setNeedsDisplay];
+}
+
+#pragma mark - Touchs
+
+- (void)setTouchHandler:(RBChartTouchHandler)touchHandler {
+    _touchHandler = touchHandler;
+    self.userInteractionEnabled = (_touchHandler != nil);
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[touches allObjects] firstObject];
+    [self chartBeTouched:touch];
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[touches allObjects] firstObject];
+    [self chartBeTouched:touch];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    [_canvas drawIfNeed:rect];
+}
+
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+}
+
+- (void)chartBeTouched:(UITouch *)touch {
+    CGPoint touchPoint = [touch locationInView:self];
+    
+    CGFloat spacing = (CGRectGetWidth(self.frame) - _canvas.leading * 2) / ([_canvas dataCount] - 1);
+    NSInteger index = (touchPoint.x - _canvas.leading) / spacing;
+    NSArray *touchedValues = [_canvas valuesAtIndex:index];
+    !_touchHandler ?: _touchHandler(index, touchedValues);
 }
 
 @end

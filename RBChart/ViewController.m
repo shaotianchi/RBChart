@@ -19,6 +19,7 @@
 #import "RBLineChartDrawer.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -52,7 +53,11 @@
     
     chart.canvas = canvas;
     
-    [self.view addSubview:chart];
+    chart.touchHandler = ^(NSInteger index, NSArray *values) {
+        NSLog(@"%@", values);
+    };
+    
+    [_scrollView addSubview:chart];
     
     // Bar chart
     
@@ -81,14 +86,14 @@
     }];
     
     barChart.canvas = barChartCanvas;
-    [self.view addSubview:barChart];
+    [_scrollView addSubview:barChart];
     
     // Pie Chart
     
     RBChart *pieChart = [RBChart chartWithType:RBDefaultPieChart];
     pieChart.frame = CGRectMake(0, 480, CGRectGetWidth([UIScreen mainScreen].bounds), 200);
     RBPieChartDrawer *pieDrawer = [[RBPieChartDrawer alloc] initWithHandler:^(RBPieChartDrawer *drawer) {
-        drawer.datas = @[@10, @80, @90, @78, @98, @79, @87];
+        drawer.datas = @[@10, @30, @20, @25, @15];
         drawer.pie = [[RBPie alloc] initWithHandler:^(RBPie *pie) {
             pie.colors = @[[UIColor colorWithRed:0.616 green:0.671 blue:0.890 alpha:1.000],
                            [UIColor colorWithRed:0.431 green:0.506 blue:0.804 alpha:1.000],
@@ -109,7 +114,15 @@
     }];
     
     pieChart.canvas = pieChartCanvas;
-    [self.view addSubview:pieChart];
+    [_scrollView addSubview:pieChart];
+    
+    [_scrollView setContentSize:CGSizeMake(CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetMaxY(pieChart.frame))];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [chart showValues:YES];
+        [barChart showValues:YES];
+        [pieChart showValues:YES];
+    });
 }
 
 - (void)didReceiveMemoryWarning {

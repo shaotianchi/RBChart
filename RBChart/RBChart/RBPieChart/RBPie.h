@@ -13,4 +13,5 @@
 kInitWithHandler_H
 @property (copy, nonatomic) NSArray<UIColor *> *colors;
 - (void)decoratorPath:(UIBezierPath *)path;
+- (void)resetColorIndex;
 @end

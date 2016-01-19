@@ -18,11 +18,15 @@ kInitWithHandler_M
 - (void)decoratorPath:(UIBezierPath *)path {
     [_colors[_colorIndex] setFill];
     [path fill];
-    [_colors[_colorIndex] setStroke];
-    [path stroke];
+//    [_colors[_colorIndex] setStroke];
+//    [path stroke];
     _colorIndex ++;
     if (_colorIndex >= _colors.count) {
         _colorIndex = 0;
     }
+}
+
+- (void)resetColorIndex {
+    _colorIndex = 0;
 }
 @end
